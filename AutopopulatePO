@@ -1,0 +1,7 @@
+##Update Customer PO number from Project Record##
+
+<update_sotransaction key="{!SODOCUMENT.DOCID!}" disablevalidation="true">
+    <CUSTOMERPONUMBER>
+    {!SODOCUMENT.PROJECT.PONUMBER!}
+   </CUSTOMERPONUMBER>  
+</update_sotransaction>
