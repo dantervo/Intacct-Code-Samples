@@ -1,0 +1,14 @@
+// Widen Fields in Intacct Forms 
+
+/* Determine the field name of the field via Chrome Inspect feature.
+Replace "#_obj__TIMESHEETITEMS_0_-_obj__PROJECTID.form-control.required" with name of field
+Replace "300px" with desired width
+Place code in the form page editor under "New Script Component"
+*/
+
+<script>
+var sheet = document.createElement('style')
+sheet.innerHTML = "#_obj__TIMESHEETITEMS_0_-_obj__PROJECTID.form-control.required, #_obj__TIMESHEETITEMS_0_-_obj__TASKID.form-control.required {min-width: 300px !important;}";
+document.body.appendChild(sheet);
+</script>
+
